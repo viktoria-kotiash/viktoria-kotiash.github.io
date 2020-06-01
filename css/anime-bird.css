@@ -1,0 +1,22 @@
+.anime {
+    position:relative;
+    width:50%;
+    height:100%;
+    margin-bottom:20px;
+}
+
+.shape-bird {
+    position: absolute;
+    bottom:60%;
+    right:0;
+    width:90%;
+}
+
+.motion * {
+    fill: transparent;
+    stroke: transparent;
+}
+
+.bird .wing {
+    transform-origin: 40% 55%;
+}

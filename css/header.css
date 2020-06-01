@@ -1,0 +1,107 @@
+header,
+header.section {
+    background-color: #94c437;
+    background-color: #99cc22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 35px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    margin-top: 15px;
+    margin-left: 20px;
+    transition: all .35s cubic-bezier(.15, .2, .2, .95);
+}
+
+.japan {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 175px;
+    margin-top: 15px;
+    margin-right: 20px;
+    transition: all .35s cubic-bezier(.15, .2, .2, .95);
+}
+
+.logo #neck,
+.logo .wing {
+    fill: #fff;
+}
+
+nav.topfixed .logo #neck,
+nav.topfixed .logo .wing {
+    fill: #94c437;
+}
+
+.logo svg {
+    transform: scale(-1, 1);
+}
+
+nav.topfixed .logo {
+    width: 90px;
+    max-width: 90px;
+}
+
+header .teapot {
+    width: 100%;
+    max-width: 60vh;
+    padding-bottom: 7vh;
+}
+
+.crkl {
+    background-color: rgba(255,255,255,.1);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.crkl:nth-last-child(1) {
+    right:12vh;
+    top:-40vh;
+    width:30vw;
+    height: 30vw;
+    transform: translateX(5vw) translateY(10vh);
+}
+
+.crkl:nth-last-child(2) {
+    left:22vh;
+    top:23vh;
+    width:8vw;
+    height: 8vw;
+    transform: translateX(6vw) translateY(10vh);
+}
+
+.crkl:nth-last-child(3) {
+    right:32vh;
+    bottom:10vh;
+    width: 12vw;
+    height: 12vw;
+    transform: translateX(-6vw) translateY(-10vh);
+}
+
+@media screen and (orientation:portrait) {
+
+    .japan {
+        width: 30%;
+        max-width: 75vw;
+    }
+    
+    header .teapot {
+        width: 100%;
+        max-width: 74vw;
+        padding-bottom: 7vh;
+    }
+    .crkl {
+        background-color: rgba(255,255,255,0);
+    }
+}
